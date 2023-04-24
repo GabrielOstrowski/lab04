@@ -10,6 +10,10 @@ do
 	  echo "podanie liczby w drugim argumencie powoduje"
 	  echo "utworzenie okreslonej liczby plikow errorx.txt"
 	  echo "-h lub --help - pokazuje pomoc"
+	  echo "-i lub --init - klonuje całe repozytorium do katalogu w którym został"
+	  echo "uruchomiony oraz ustawia ścieżkę w zmiennej środowiskowej PATH"
+	  echo "-e lub --error - wysyla bledy do pliku, podanie liczby w drugim"
+	  echo "argumencie powoduje utworzenie okreslonej liczby plikow errorx.txt"	  
 	  exit 0;;
   esac
 done
