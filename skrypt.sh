@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# to samo co wyżej, ale „skrypt.sh --error 30” tworzy errorx/errorx.txt, bez 
-# liczby ma domyślne tworzyć 100 plików, dodać też flagę „skrypt.sh -e 30”
-
+cp *.* podkatalog/
+$PATH = C:/Users/$USER/podkatalog
 licznik=1
 while [ $# -gt 0 ];
 do
