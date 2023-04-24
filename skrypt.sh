@@ -4,15 +4,12 @@ licznik=1
 while [ $# -gt 0 ];
 do
   case "$1" in
-    -l|--logs)
-	  while [ $licznik -lt 101 ];
-	  do
-	    echo 2>error$licznik.txt
-		echo "error"$licznik >> error$licznik.txt
-		echo $0 >> error$licznik.txt
-		echo $(date) >> error$licznik.txt
-		licznik=$[licznik+1]
-	  done
+    -h|--help)
+	  echo "Uzycie: -d lub --date - pokazuje biezaca date"
+	  echo "-l lub --logs - domyslnie tworzy 100 plikow errorx.txt,"
+	  echo "podanie liczby w drugim argumencie powoduje"
+	  echo "utworzenie okreslonej liczby plikow errorx.txt"
+	  echo "-h lub --help - pokazuje pomoc"
 	  exit 0;;
   esac
 done
